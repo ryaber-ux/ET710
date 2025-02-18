@@ -1,0 +1,20 @@
+h1.title{
+    text-align: center;
+    color: crimson;
+    padding: 1rem;
+    border-bottom: dashed grey 2px;
+}
+.box1, .box2, .box3{
+    width: 300px;
+    height: 150px;
+    text-align: center;
+    padding: 2em;
+    border: solid 1px grey;
+    margin: 3em auto;
+}
+.box1{
+    box-shadow: -10px 10px 15px orangered;
+}
+.box2{
+    box-shadow: -10px 10px 15px orangered inset;
+}
