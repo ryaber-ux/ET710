@@ -26,3 +26,62 @@ h1.title{
     width: 200px;
     border-radius: 50%;
 }
+.header{
+    background-color: aliceblue;
+    padding: 1em;
+    text-align: center;
+}
+.navlinks{
+    padding: 1em;
+    text-align: center;
+    color: aliceblue;
+    background-color: darkblue;
+}
+.maincontainer{
+    width: 1000px;
+    height: 500px;
+    margin: 2em auto;
+    box-shadow: 5px 5px 10px grey
+}
+.leftblock{
+    width: 700px;
+    height: 300px;
+    border: solid grey;
+    float: left;
+}
+.rightblock{
+    width: 297px;
+    header: 300px;
+    border: 1px solid black;
+    float: right;
+}
+.infosection, .newsarticle{
+    height: 150px;
+}
+.infosection{
+    background-color: chartreuse;
+}
+.newsarticle{
+    background-color: deepskyblue;
+}
+.images{
+    height: 200px;
+    background-color: crimson;
+    float: left;
+    width: 100%;
+}
+.footer{
+    height: 100px;
+    margin: auto; 
+    height: 100px;
+    background-color: lightgray;
+}
+.liquidheader, .liquidnav, .liquidcontainer, .liquidfooter{
+    width: 80%;
+}
+.liquidleftblock{
+    width: 70%;
+}
+.liquidrightblock{
+    width: 29%;
+}
