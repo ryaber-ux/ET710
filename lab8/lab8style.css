@@ -1,0 +1,130 @@
+.colorcontainers{
+    border: solid grey 1px;
+    height: 200px;
+}
+.rgb1, .rgb2, .rgb3, .rgb4{
+    width: 200px;
+    height: 200px;
+    border: ridge black 3px;
+    float: left;
+    margin-right: 10px;
+}
+.rgb1{
+    background-color: rgb(242, 80, 30);
+}
+.rgb2{
+    background-color: rgb(127, 186, 0);
+}
+.rgb3{
+    background-color: rgb(1, 164, 239);
+}
+.rgb4{
+    background-color: rgb(255, 185, 1);
+}
+.hex1, .hex2, .hex3{
+    width: 200px;
+    height: 200px;
+    border: ridge black 3px;
+    float: left;
+    margin-right: 10px;
+}
+.hex1{
+    background-color: #d4f4f4;
+}
+.hex2{
+    background-color: #f34f75;
+}
+.hex3{
+    background-color: #665b45;
+}
+/* position */
+img{width: 100%; display: block;}
+.imgcontainer{
+    width: 60%;
+    margin: 1em auto;
+    box-shadow: 1px 1px 5px gray;
+    position: relative;
+}
+.imgtitle{
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    right: 20%;
+    bottom: 40%;
+    background-color: rgba(127, 186, 0, 0.7);
+    text-align: center;
+    font-size: 2em;
+    padding: 1em;
+}
+.topnav{
+    background-color: #3f3435;
+    position: fixed;
+    top: 5%;
+    width: 100%;
+}
+.topnav a{
+    display: inline-block;
+    padding: 1em 3em;
+    color: whitesmoke;
+    text-decoration: none;
+}
+.topnav a:hover{
+    background-color: aliceblue;
+    color: #48f9f5;
+}
+.mesh1, .mesh2, .mesh3{
+    width: 60%;
+    height: 200px;
+}
+.mesh1{
+    background-image: linear-gradient(#78002e, #10ab88);
+}
+.mesh2{
+    background-image: linear-gradient(to right, red,blue);
+}
+.mesh3{
+    background-image: linear-gradient(to top left, red, blue);
+}
+
+.heroinfo{
+    position: absolute;
+    top: 305;
+    bottom: 30%;
+    left: 20%;
+    right: 20%;
+    text-align: center;
+    border: solid 1px gray;
+}
+.heroimage{
+    background-image: linear-gradient(to right, rgba(255,255,255,0.3), rgba(50, 179, 33,0.7)), url("images/image.jpg");
+    background-size: 100% 100%;
+    height: 300px;
+    width: 400px;
+}
+.sepia1{
+    filter: sepia(10%);
+}
+.sepia2{
+    filter: sepia(60%);
+}
+.sepia3{
+    filter: sepia(100%);
+}
+.blur1{
+    filter: blur(2px);
+}
+.blur2{
+    filter: blur(10px);
+}
+.blur3{
+    filter: blur(20px);
+}
+.invert1{
+    filter: invert(10%);
+}
+.invert2{
+    filter: invert(60%);
+}
+.invert3{
+    filter: invert(100%);
+}
