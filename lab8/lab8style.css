@@ -38,7 +38,7 @@
     background-color: #665b45;
 }
 /* position */
-img{width: 100%; display: block;}
+img{width: 100%; display: block; height: 100%;}
 .imgcontainer{
     width: 60%;
     margin: 1em auto;
@@ -127,4 +127,41 @@ img{width: 100%; display: block;}
 }
 .invert3{
     filter: invert(100%);
+}
+/*LAB EXERCISE*/
+.container{
+    height: auto;
+    border: solid red 1px;   
+}
+.container1, .container2, .container3{
+    width: 500px;
+    height: 600px;
+    display: inline-block;
+    margin: 2em;
+}
+.container1{
+    filter: invert(60%);
+    border: solid blue 8px;
+    opacity:inherit;
+    /*Text*/
+    padding: 1%;
+    font-family: times new roman;
+    color: darkblue;
+}
+.container2{
+    filter: blur(3px);
+    border: dashed black 8px;
+    opacity: unset;
+    /*Text*/
+    padding: 1%;
+}
+.container3{
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border: inset red 8px;
+    background-image: linear-gradient(to right, rgba(230, 12, 12, 0.747), rgba(245, 7, 7, 0)), url("images/parrot.jpg");
+    
+}
+.container3info{
+    
 }
