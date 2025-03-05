@@ -48,6 +48,12 @@
     background-color: aliceblue;
     color: red;
 }
+.collapsmenu{
+    background-color: orangered;
+    font-size: 1em;
+    color: aliceblue;
+    display: none;
+}
 .footer{
     background-color: darkgray;
     display: flex;
@@ -61,3 +67,26 @@
     font-size: 1.2em;
     font-weight: bolder;
 }
+
+@media only screen and (max-width: 1400px){
+    .card{background-color: lightcoral; width: 40%;}
+    .cardtitle{text-align: center;}
+    .link{
+        padding: 1em 2em;
+        font-size: 1.1em;
+    }
+    .headertitle{font-size: 1.2em;}
+}
+@media only screen and (max-width: 800px){
+    .maincontainer{height: auto;}
+    .card{background-color: lightskyblue; width: 90%; margin-bottom: 2em; }
+    .headertitle{width: 100%; justify-content: center; border-top: solid white 1px;}
+    .footercustomer, .footermyaccount, .footerfollow{
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .navlink{display: none;}    
+}
+    
