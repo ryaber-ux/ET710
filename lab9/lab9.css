@@ -97,8 +97,9 @@
 }
 @media only screen and (max-width: 800px){
     .maincontainer{height: auto;}
-    .card{background-color: lightskyblue; width: 90%; margin-bottom: 2em; }
-    .headertitle{width: 100%; justify-content: center; border-top: solid white 1px;}
+    .card{width: 90%; margin-bottom: 2em; }
+    .card:nth-child(1){margin-top: 2em;}
+    .headertitle{width: 100%;padding: 1em; justify-content: center; border-top: solid white 1px;}
     .header{flex-wrap: wrap;}
     .navlink{width: 100%; justify-content: center; border-top: solid white 1px;}
     .footer{flex-wrap: wrap;}
@@ -109,7 +110,10 @@
 
 @media only screen and (max-width: 500px){
     .navlink{display: none;}
-    .collapsemenu{display: block; margin-left: auto;}
-    
+    .collapsemenu{display: block; margin-left: auto; padding: 1em;}
+    .footercustomer, .footermyaccount, .footerfollow{
+        width: 100%;
+    }
+    .cardtitle{font-size: 1.2em; overflow: hidden;}
 }
     
