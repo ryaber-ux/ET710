@@ -109,6 +109,7 @@
 
 @media only screen and (max-width: 500px){
     .navlink{display: none;}
+    .collapsemenu{display: block; margin-left: auto;}
     
 }
     
