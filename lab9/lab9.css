@@ -67,7 +67,25 @@
     font-size: 1.2em;
     font-weight: bolder;
 }
-
+.footerlist{
+    list-style: none;
+}
+.footerlist li{
+    padding: 0.5em 0em;
+    margin-left: -40px;
+}
+.img{
+    width: 100%;
+    display: block;
+}
+.socialmedia{
+    display: flex;
+}
+.socialmedia a{
+    display: inline-block;
+    width: 10%;
+    margin-right: 5%;
+}
 @media only screen and (max-width: 1400px){
     .card{background-color: lightcoral; width: 40%;}
     .cardtitle{text-align: center;}
@@ -81,6 +99,9 @@
     .maincontainer{height: auto;}
     .card{background-color: lightskyblue; width: 90%; margin-bottom: 2em; }
     .headertitle{width: 100%; justify-content: center; border-top: solid white 1px;}
+    .header{flex-wrap: wrap;}
+    .navlink{width: 100%; justify-content: center; border-top: solid white 1px;}
+    .footer{flex-wrap: wrap;}
     .footercustomer, .footermyaccount, .footerfollow{
         width: 50%;
     }
