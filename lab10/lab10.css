@@ -6,12 +6,10 @@ body{
     box-sizing: border-box;
     background: #f6211d;
 }
-
 .title{
     text-align: center;
     margin: 20px 0;
 }
-
 header{
     background: maroon;
     padding: 10px;
