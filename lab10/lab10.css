@@ -4,7 +4,7 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: #63ca7b;
+    background: #f6211d;
 }
 
 .title{
@@ -13,7 +13,7 @@ body{
 }
 
 header{
-    background: #69f8e9;
+    background: maroon;
     padding: 10px;
 }
 
@@ -68,14 +68,14 @@ header{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
-    background: white;
+    background: red;
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .card{
-    background: #65c0c7;
+    background: orangered;
     border-radius: 10px;
     padding: 20px;
     text-align: center;
@@ -87,13 +87,13 @@ header{
     border-radius: 5px;
 }
 
-.card p {
+.card p{
     color: azure;
     font-weight: bold;
 }
 
 .card:hover{
-    background: #0056b3;
+    background: maroon;
     box-shadow: 0 8px 16px rgba(132, 72, 72, 0.2);
 }
 
@@ -105,7 +105,7 @@ header{
 }
 
 .infocard{
-    background: #586fd5;
+    background: black;
     padding: 20px;
     border-radius: 8px;
     text-align: center;
@@ -113,18 +113,18 @@ header{
 }
 
 footer{
-    background: #a65f5f;
+    background: #b41515;
     color: azure;
     padding: 20px;
     text-align: center;
     margin-top: 20px;
 }
 
-.footerlarge {
+.footerlarge{
     font-size: 18px;
 }
 
-.footersmall {
+.footersmall{
     font-size: 12px;
 }
 
