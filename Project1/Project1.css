@@ -1,0 +1,157 @@
+
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #f6211d;
+}
+.title{
+    text-align: center;
+    margin: 20px 0;
+}
+header{
+    background: yellow;
+    padding: 10px;
+}
+
+.navtabs{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navtabs li{
+    margin-right: 15px;
+}
+.navtabs a{
+    color: azure;
+    text-decoration: none;
+}
+.introsection{
+    position: relative;
+    width: 100%;
+    max-height: 300px;
+    overflow: hidden;
+}
+
+.introsection img{
+    width: 100%;
+    display: block;
+    filter: brightness(40%) contrast(105%);
+}
+
+.textoverlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(53, 35, 35, 0.6);
+    color: azure;
+    padding: 10px 20px;
+    font-size: 24px;
+}
+
+.contentcontainer{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.cardsection{
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    background: red;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card{
+    background: orangered;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(239, 116, 116, 0.2);
+}
+
+.card img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.card p{
+    color: azure;
+    font-weight: bold;
+}
+
+.card:hover{
+    background: maroon;
+    box-shadow: 0 8px 16px rgba(132, 72, 72, 0.2);
+}
+
+.rightcolumn{
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.infocard{
+    background: black;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    color: azure;
+}
+
+footer{
+    background: #b41515;
+    color: azure;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footerlarge{
+    font-size: 18px;
+}
+
+.footersmall{
+    font-size: 12px;
+}
+
+@media (max-width: 600px) {
+    .contentcontainer {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cardsection{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .rightcolumn {
+        width: 90%;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+    .contentcontainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cardsection {
+        width: 80%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .rightcolumn {
+        width: 80%;
+    }
+}
