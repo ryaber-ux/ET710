@@ -25,12 +25,10 @@ header{
 .navtabs li{
     margin-right: 15px;
 }
-
 .navtabs a{
     color: azure;
     text-decoration: none;
 }
-
 .introsection{
     position: relative;
     width: 100%;
