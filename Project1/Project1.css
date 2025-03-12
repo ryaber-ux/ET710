@@ -1,19 +1,16 @@
 
-body {
+body{
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background-color: #f5f5f5;
 }
-
-
-header {
+header{
     background-color: #333;
     padding: 15px;
 }
-
-.navtabs {
+.navtabs{
     list-style: none;
     margin: 0;
     padding: 0;
@@ -21,37 +18,30 @@ header {
     justify-content: flex-start;
     gap: 20px;
 }
-
-.navtabs li {
+.navtabs li{
     display: inline;
 }
-
 .navtabs a {
     color: white;
     text-decoration: none;
     font-size: 18px;
 }
-
-.navtabs a:hover {
+.navtabs a:hover{
     color: #ffcc00;
 }
-
-
-.introsection {
+.introsection{
     position: relative;
     width: 100%;
     height: 400px;
     overflow: hidden;
 }
-
-.introimage {
+.introimage{
     width: 100%;
     height: 100%;
     object-fit: cover;
     filter: brightness(60%);
 }
-
-.textoverlay {
+.textoverlay{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -62,109 +52,85 @@ header {
     padding: 20px;
     border-radius: 8px;
 }
-
-.textoverlay h1 {
+.textoverlay h1{
     font-size: 36px;
     margin-bottom: 10px;
 }
-
-.textoverlay p {
+.textoverlay p{
     font-size: 18px;
 }
-
-
 main {
     padding: 40px 20px;
 }
-
-.introinfo {
+.introinfo{
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
 }
-
-.introinfo h2 {
+.introinfo h2{
     font-size: 32px;
     margin-bottom: 20px;
     color: #333;
 }
-
-.introinfo p {
+.introinfo p{
     font-size: 18px;
     line-height: 1.6;
     color: #555;
 }
-
-
-footer {
+footer{
     background-color: #333;
     color: white;
     text-align: center;
     padding: 15px;
     margin-top: 20px;
 }
-
 footer p {
     margin: 0;
     font-size: 16px;
 }
-
 @media (max-width: 600px) {
     .navtabs {
         flex-direction: column;
         align-items: center;
         gap: 10px;
     }
-
     .textoverlay h1 {
         font-size: 28px;
     }
-
     .textoverlay p {
         font-size: 16px;
     }
-
     .introinfo h2 {
         font-size: 26px;
     }
-
     .introinfo p {
         font-size: 16px;
     }
 }
-
 @media (min-width: 600px) and (max-width: 1024px) {
     .textoverlay h1 {
         font-size: 32px;
     }
-
     .textoverlay p {
         font-size: 17px;
     }
-
     .introinfo h2 {
         font-size: 30px;
     }
-
     .introinfo p {
         font-size: 17px;
     }
 }
-
-
 @media (min-width: 1024px) {
     .textoverlay h1 {
         font-size: 42px;
     }
-
     .textoverlay p {
         font-size: 20px;
     }
-
     .introinfo h2 {
         font-size: 34px;
     }
-
     .introinfo p {
         font-size: 20px;
     }
