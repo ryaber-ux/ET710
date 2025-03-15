@@ -78,40 +78,7 @@ main {
     line-height: 1.6;
     color: #555;
 }
-.cardsection{
-    width: auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    background: whitesmoke black;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    gap: 30px;
 
-}
-
-.card{
-    background: #ffcc00;
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 2px 4px rgba(219, 199, 17, 0.733);
-}
-
-.card img{
-    width: 100%;
-    border-radius: 5px;
-}
-
-.card a{
-    color: azure;
-    font-weight: bold;
-}
-
-.card:hover{
-    background: #ffa601;
-    box-shadow: 0 8px 16px rgba(132, 72, 72, 0.582);
-}
 footer{
     background-color: #0de206de;
     color: white;
@@ -119,7 +86,8 @@ footer{
     padding: 15px;
     margin-top: 20px;
 }
-footer p {
+
+footer p{
     margin: 0;
     font-size: 16px;
 }
