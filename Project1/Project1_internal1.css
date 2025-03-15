@@ -106,6 +106,7 @@ main {
     border-radius: 5px;
     padding: 10px;
 }
+
 .card img:hover{
     filter: brightness(50%);
   }
