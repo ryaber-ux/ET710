@@ -67,6 +67,7 @@ main {
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
+    height: auto;
 }
 .introinfo h2{
     font-size: 32px;
@@ -83,6 +84,7 @@ footer{
     background-color: #0de206de;
     color: white;
     text-align: center;
+    padding: 15px;
     margin-top: 20px;
 }
 
