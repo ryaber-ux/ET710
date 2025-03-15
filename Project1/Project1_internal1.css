@@ -109,7 +109,7 @@ main {
 
 .card img:hover{
     filter: brightness(50%);
-  }
+}
 
 .card a{
     color: azure;

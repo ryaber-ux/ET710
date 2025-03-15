@@ -103,6 +103,11 @@ main {
     border-radius: 5px;
 }
 
+.card img:hover{
+    filter: brightness(50%);
+}
+
+
 .card a{
     color: azure;
     font-weight: bold;
