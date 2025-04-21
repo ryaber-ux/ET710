@@ -1,15 +1,15 @@
 :root {
-    --primarycolor: rgb(10, 4, 24);
-    --primarydark: rgb(7, 2, 18);
-    --primarylight: rgb(22, 14, 40);
-    --secondarycolor: rgb(163, 129, 247);
+    --primarycolor: rgb(240, 248, 255);     
+    --primarydark: rgb(90, 125, 154);       
+    --primarylight: rgb(200, 221, 235);     
+    --secondarycolor: rgb(106, 159, 181);   
   
-    --text-light: #ffffff;
-    --text-dark: #000000;
-  
+    --text-dark: rgb(44, 62, 80);           
+    --text-light: rgb(255, 255, 255);     
+    
     --hover-text-color: var(--text-light);
     --hover-text-size: 1.5rem;
-    --hover-text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+    --hover-text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
     --hover-text-transition: 0.3s ease;
   }
   body{
