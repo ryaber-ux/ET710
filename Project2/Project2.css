@@ -1,7 +1,51 @@
-:root{
+:root {
     --primarycolor: rgb(10, 4, 24);
-    --primarydark: rgb(10, 4, 24);
-    --primarylight: rgb(10, 4, 24);
-    --secondarycolor: rgb(10, 4, 24);
-    
-}
+    --primarydark: rgb(7, 2, 18);
+    --primarylight: rgb(22, 14, 40);
+    --secondarycolor: rgb(163, 129, 247);
+  
+    --text-light: #ffffff;
+    --text-dark: #000000;
+  
+    --hover-text-color: var(--text-light);
+    --hover-text-size: 1.5rem;
+    --hover-text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+    --hover-text-transition: 0.3s ease;
+  }
+  body{
+    background-color: var(--primarycolor);
+    color: var(--text-light);
+  }
+  
+  h1, h2{
+    color: var(--secondarycolor);
+  }
+  
+  .intro_img{
+    position: relative;
+    width: fit-content;
+  }
+  
+  .intro_img img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border: 3px solid var(--secondarycolor);
+  }
+  
+  .hover-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--hover-text-color);
+    font-size: var(--hover-text-size);
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity var(--hover-text-transition);
+    text-shadow: var(--hover-text-shadow);
+  }
+  
+  .intro_img:hover .hover-text{
+    opacity: 1;
+  }
