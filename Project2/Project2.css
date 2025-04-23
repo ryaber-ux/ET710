@@ -1,4 +1,4 @@
-:root {
+:root{
   --primarycolor: rgb(240, 248, 255);     
   --primarydark: rgb(90, 125, 154);       
   --primarylight: rgb(200, 221, 235);     
@@ -11,29 +11,29 @@
   --hover-text-transition: 0.3s ease;
 }
 
-body {
+body{
   background-color: var(--primarycolor);
   color: var(--text-dark);
   font-family: 'Segoe UI', sans-serif;
 }
 
-h1, h2 {
+h1, h2{
   color: var(--primarydark);
 }
 
-.intro-message {
+.intro-message{
   max-width: 600px;
   margin: 0 auto;
   font-size: 1.1rem;
 }
 
-.intro_img {
+.intro_img{
   position: relative;
   width: fit-content;
   margin: 0 auto;
 }
 
-.intro_img img {
+.intro_img img{
   display: block;
   max-width: 100%;
   height: auto;
@@ -41,11 +41,11 @@ h1, h2 {
   transition: transform 0.3s ease;
 }
 
-.intro_img:hover img {
+.intro_img:hover img{
   transform: scale(1.02);
 }
 
-.hover-text {
+.hover-text{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -62,24 +62,24 @@ h1, h2 {
   max-width: 90%;
 }
 
-.intro_img:hover .hover-text {
+.intro_img:hover .hover-text{
   opacity: 1;
 }
 
-.btn-secondary {
+.btn-secondary{
   background-color: var(--secondarycolor);
   border-color: var(--primarydark);
   color: var(--text-light);
 }
 
-.dropdown-menu {
+.dropdown-menu{
   background-color: var(--primarylight);
 }
 
-.dropdown-header {
+.dropdown-header{
   color: var(--primarydark);
 }
-footer {
-  font-size: 0.95rem;
+footer{
+  font-size: 1rem;
   border-top: 1px solid var(--primarydark);
 }
