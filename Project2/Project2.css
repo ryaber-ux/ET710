@@ -1,51 +1,85 @@
-:root {
-    --primarycolor: rgb(240, 248, 255);     
-    --primarydark: rgb(90, 125, 154);       
-    --primarylight: rgb(200, 221, 235);     
-    --secondarycolor: rgb(106, 159, 181);   
-  
-    --text-dark: rgb(44, 62, 80);           
-    --text-light: rgb(255, 255, 255);     
-    
-    --hover-text-color: var(--text-light);
-    --hover-text-size: 1.5rem;
-    --hover-text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
-    --hover-text-transition: 0.3s ease;
-  }
-  body{
-    background-color: var(--primarycolor);
-    color: var(--text-light);
-  }
-  
-  h1, h2{
-    color: var(--secondarycolor);
-  }
-  
-  .intro_img{
-    position: relative;
-    width: fit-content;
-  }
-  
-  .intro_img img{
-    display: block;
-    max-width: 100%;
-    height: auto;
-    border: 3px solid var(--secondarycolor);
-  }
-  
-  .hover-text{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: var(--hover-text-color);
-    font-size: var(--hover-text-size);
-    font-weight: bold;
-    opacity: 0;
-    transition: opacity var(--hover-text-transition);
-    text-shadow: var(--hover-text-shadow);
-  }
-  
-  .intro_img:hover .hover-text{
-    opacity: 1;
-  }
+:root{
+  --primarycolor: rgb(240, 248, 255);     /* Light Blue - Background */
+  --primarydark: rgb(90, 125, 154);       /* Slate Blue - Headers */
+  --primarylight: rgb(200, 221, 235);     /* Powder Blue - Accent */
+  --secondarycolor: rgb(106, 159, 181);   /* Soft Teal-Blue - Buttons */
+
+  --text-dark: rgb(44, 62, 80);           /* Deep Blue-Grey */
+  --text-light: rgb(255, 255, 255);       /* White */
+
+  --hover-text-color: var(--text-light);
+  --hover-text-size: 1.5rem;
+  --hover-text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+  --hover-text-transition: 0.3s ease;
+}
+
+body{
+  background-color: var(--primarycolor);
+  color: var(--text-dark);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+h1, h2{
+  color: var(--primarydark);
+}
+
+.intro-message{
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  color: var(--text-dark);
+}
+
+.intro_img{
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.intro_img img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border: 3px solid var(--secondarycolor);
+  transition: transform 0.3s ease;
+}
+
+.intro_img:hover img{
+  transform: scale(1.02);
+}
+
+.hover-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--hover-text-color);
+  font-size: var(--hover-text-size);
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity var(--hover-text-transition);
+  text-shadow: var(--hover-text-shadow);
+  padding: 1rem;
+  text-align: center;
+  background-color: rgba(90, 125, 154, 0.7);
+  border-radius: 10px;
+  max-width: 90%;
+}
+
+.intro_img:hover .hover-text{
+  opacity: 1;
+}
+
+.btn-secondary{
+  background-color: var(--secondarycolor);
+  border-color: var(--primarydark);
+  color: var(--text-light);
+}
+
+.dropdown-menu{
+  background-color: var(--primarylight);
+}
+
+.dropdown-header{
+  color: var(--primarydark);
+}
