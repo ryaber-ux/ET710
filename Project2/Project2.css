@@ -1,4 +1,4 @@
-:root {
+:root{
   --primarycolor: rgb(240, 248, 255);
   --primarydark: rgb(90, 125, 154);
   --primarylight: rgb(200, 221, 235);
@@ -7,13 +7,12 @@
   --text-light: rgb(255, 255, 255);
 }
 
-body {
+body{
   background-color: var(--primarycolor);
   color: var(--text-dark);
 }
 
-
-h1, h2 {
+h1, h2{
   color: var(--secondarycolor);
 }
 
@@ -60,6 +59,6 @@ footer {
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 }
 
-.text-center {
+.text-center{
   text-align: center !important;
 }
