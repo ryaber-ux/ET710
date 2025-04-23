@@ -1,85 +1,64 @@
-:root{
-  --primarycolor: rgb(240, 248, 255);     
-  --primarydark: rgb(90, 125, 154);       
-  --primarylight: rgb(200, 221, 235);     
-  --secondarycolor: rgb(106, 159, 181);   
-  --text-dark: rgb(44, 62, 80);           
-  --text-light: rgb(255, 255, 255);       
-  --hover-text-color: var(--text-light);
-  --hover-text-size: 1.5rem;
-  --hover-text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
-  --hover-text-transition: 0.3s ease;
+:root {
+  --primarycolor: rgb(240, 248, 255);
+  --primarydark: rgb(90, 125, 154);
+  --primarylight: rgb(200, 221, 235);
+  --secondarycolor: rgb(106, 159, 181);
+  --text-dark: rgb(44, 62, 80);
+  --text-light: rgb(255, 255, 255);
 }
 
-body{
+body {
   background-color: var(--primarycolor);
   color: var(--text-dark);
-  font-family: 'Segoe UI', sans-serif;
 }
 
-h1, h2{
-  color: var(--primarydark);
+h1, h2 {
+  color: var(--secondarycolor);
 }
 
-.intro-message{
-  max-width: 600px;
-  margin: 0 auto;
-  font-size: 1.1rem;
+.navbar {
+  background-color: var(--primarylight);
 }
 
-.intro_img{
-  position: relative;
-  width: fit-content;
-  margin: 0 auto;
+.navbar-brand, .nav-link {
+  color: var(--text-dark) !important;
 }
 
-.intro_img img{
-  display: block;
-  max-width: 100%;
-  height: auto;
-  border: 3px solid var(--secondarycolor);
-  transition: transform 0.3s ease;
+.card {
+  margin-bottom: 20px;
 }
 
-.intro_img:hover img{
-  transform: scale(1.02);
+.card-body {
+  background-color: var(--primarylight);
+  color: var(--text-dark);
 }
 
-.hover-text{
+.card-body h5 {
+  color: var(--secondarycolor);
+}
+
+.card-body p {
+  color: var(--text-dark);
+}
+
+footer {
+  background-color: var(--primarylight);
+  color: var(--text-dark);
+}
+
+.hover-text {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: var(--hover-text-color);
-  font-size: var(--hover-text-size);
+  color: var(--text-light);
+  font-size: 1.5rem;
   font-weight: bold;
   opacity: 0;
-  transition: opacity var(--hover-text-transition);
-  text-shadow: var(--hover-text-shadow);
-  background-color: rgba(90, 125, 154, 0.7);
-  padding: 1rem;
-  border-radius: 10px;
-  max-width: 90%;
+  transition: opacity 0.3s ease;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 }
 
-.intro_img:hover .hover-text{
-  opacity: 1;
-}
-
-.btn-secondary{
-  background-color: var(--secondarycolor);
-  border-color: var(--primarydark);
-  color: var(--text-light);
-}
-
-.dropdown-menu{
-  background-color: var(--primarylight);
-}
-
-.dropdown-header{
-  color: var(--primarydark);
-}
-footer{
-  font-size: 1rem;
-  border-top: 1px solid var(--primarydark);
+.text-center {
+  text-align: center !important;
 }
