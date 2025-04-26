@@ -1,49 +1,22 @@
-:root{
+:root {
   --primarycolor: rgb(240, 248, 255);
-  --primarydark: rgb(90, 125, 154);
   --primarylight: rgb(200, 221, 235);
   --secondarycolor: rgb(106, 159, 181);
   --text-dark: rgb(44, 62, 80);
-  --text-light: rgb(255, 255, 255);
 }
 
-body{
+body {
   background-color: var(--primarycolor);
   color: var(--text-dark);
 }
 
-h1, h2{
+h1, h2 {
   color: var(--secondarycolor);
 }
 
-.navbar {
-  background-color: var(--primarylight);
-}
-
-.navbar-brand, .nav-link {
-  color: var(--text-dark) !important;
-}
-
-.card {
-  margin-bottom: 20px;
-}
-
-.card-body {
-  background-color: var(--primarylight);
-  color: var(--text-dark);
-}
-
-.card-body h5 {
-  color: var(--secondarycolor);
-}
-
-.card-body p {
-  color: var(--text-dark);
-}
-
-footer {
-  background-color: var(--primarylight);
-  color: var(--text-dark);
+.intro_img {
+  position: relative;
+  display: inline-block;
 }
 
 .hover-text {
@@ -51,14 +24,14 @@ footer {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: var(--text-light);
-  font-size: 1.5rem;
-  font-weight: bold;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  border-radius: 6px;
   opacity: 0;
-  transition: opacity 0.3s ease;
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
 }
 
-.text-center{
-  text-align: center !important;
+.intro_img:hover .hover-text {
+  opacity: 1;
 }

@@ -3,102 +3,114 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Project2/Ryaan_Berko-Nti</title>
+  <title>Essential Oils</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="Project2.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <nav class="navbar navbar-light" style="background-color: rgb(200, 221, 235);">
-    <div class="container">
-      <a class="navbar-brand text-dark" href="#">Essential Oils</a>
-      <a class="nav-link text-dark" href="#">Home</a>
+  <div class="container py-4">
+
+    <h1 class="text-center mb-4">Essential Oils</h1>
+
+    <div class="text-center mb-4">
+      <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">What for?</button>
+      <ul class="dropdown-menu">
+        <li><h6 class="dropdown-header">Hair</h6></li>
+        <li><a class="dropdown-item" href="#">Rosemary</a></li>
+        <li><a class="dropdown-item" href="#">Argan</a></li>
+        <li><h6 class="dropdown-header">Face</h6></li>
+        <li><a class="dropdown-item" href="#">Moringa</a></li>
+        <li><a class="dropdown-item" href="#">Jojoba</a></li>
+      </ul>
     </div>
-  </nav>
 
-  <div class="container mt-4">
-    <h1 class="text-center">Essential Oils</h1>
-
-    <div class="text-center mb-5 position-relative">
-      <img src="images/intro_img.jpg" alt="Lavender oil" class="img-fluid rounded shadow">
-      <div class="hover-text">
-        Essential oils support your body inside and out!
-      </div>
+    <div class="text-center mb-4 intro_img">
+      <img src="images/intro_img.jpg" alt="Lavender Oil" class="img-fluid rounded shadow">
+      <div class="hover-text">Essential oils support wellness inside and out.</div>
     </div>
 
-    <h2 class="text-center text-primary">Hair Oils</h2>
-    <div class="row">
+    <h2 class="text-center">Hair Oils</h2>
+    <div class="row text-center mb-4">
       <div class="col-md-4">
-        <div class="card text-center">
-          <img src="images/rosemary.jpg" class="card-img-top" alt="Rosemary">
-          <div class="card-body">
-            <h5>Rosemary Oil</h5>
-            <p>Helps hair grow strong and thick.</p>
-            <p><strong>$14.99</strong></p>
-          </div>
-        </div>
+        <img src="images/rosemary.jpg" class="img-fluid rounded shadow" data-bs-toggle="modal" data-bs-target="#rosemaryModal" alt="Rosemary">
+        <h5>Rosemary - $12</h5>
       </div>
       <div class="col-md-4">
-        <div class="card text-center">
-          <img src="images/tea_tree.jpg" class="card-img-top" alt="Tea Tree">
-          <div class="card-body">
-            <h5>Tea Tree Oil</h5>
-            <p>Good for dry, itchy scalps.</p>
-            <p><strong>$14.99</strong></p>
-          </div>
-        </div>
+        <img src="images/argan.jpg" class="img-fluid rounded shadow" data-bs-toggle="modal" data-bs-target="#arganModal" alt="Argan">
+        <h5>Argan - $12</h5>
       </div>
       <div class="col-md-4">
-        <div class="card text-center">
-          <img src="images/argan.jpg" class="card-img-top" alt="Argan">
-          <div class="card-body">
-            <h5>Argan Oil</h5>
-            <p>Leaves hair soft and shiny.</p>
-            <p><strong>$14.99</strong></p>
-          </div>
-        </div>
+        <img src="images/tea_tree.jpg" class="img-fluid rounded shadow" data-bs-toggle="modal" data-bs-target="#teaTreeModal" alt="Tea Tree">
+        <h5>Tea Tree - $12</h5>
       </div>
     </div>
 
-    <h2 class="text-center text-primary mt-5">Face Oils</h2>
-    <div class="row">
+    <h2 class="text-center">Face Oils</h2>
+    <div class="row text-center mb-4">
       <div class="col-md-4">
-        <div class="card text-center">
-          <img src="images/moringa.jpg" class="card-img-top" alt="Moringa">
-          <div class="card-body">
-            <h5>Moringa Oil</h5>
-            <p>Great for glowing skin.</p>
-            <p><strong>$14.99</strong></p>
-          </div>
-        </div>
+        <img src="images/moringa.jpg" class="img-fluid rounded shadow" data-bs-toggle="modal" data-bs-target="#moringaModal" alt="Moringa">
+        <h5>Moringa - $12</h5>
       </div>
       <div class="col-md-4">
-        <div class="card text-center">
-          <img src="images/jojoba.jpg" class="card-img-top" alt="Jojoba">
-          <div class="card-body">
-            <h5>Jojoba Oil</h5>
-            <p>Hydrates without feeling greasy.</p>
-            <p><strong>$14.99</strong></p>
-          </div>
-        </div>
+        <img src="images/jojoba.jpg" class="img-fluid rounded shadow" data-bs-toggle="modal" data-bs-target="#jojobaModal" alt="Jojoba">
+        <h5>Jojoba - $12</h5>
       </div>
       <div class="col-md-4">
-        <div class="card text-center">
-          <img src="images/rosehip.jpg" class="card-img-top" alt="Rosehip">
-          <div class="card-body">
-            <h5>Rosehip Oil</h5>
-            <p>Helps with scars and marks.</p>
-            <p><strong>$14.99</strong></p>
-          </div>
-        </div>
+        <img src="images/rosehip.jpg" class="img-fluid rounded shadow" data-bs-toggle="modal" data-bs-target="#rosehipModal" alt="Rosehip">
+        <h5>Rosehip - $12</h5>
       </div>
     </div>
 
-    <footer class="text-center mt-5 p-3" style="background-color: rgb(200, 221, 235); color: rgb(44, 62, 80);">
-      &copy; 2025 Essential Oils. All rights reserved.
-    </footer>
+    <h2 class="text-center mt-5">Checkout</h2>
+    <form class="w-50 mx-auto mb-5" id="checkoutForm">
+      <div class="mb-3">
+        <label for="name" class="form-label">Full Name</label>
+        <input type="text" class="form-control" id="name" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+  </div>
+
+  <footer class="text-center py-3 bg-light">
+    <small>&copy; 2025 Essential Oils by Ryaan Berko-Nti</small>
+  </footer>
+
+  <!-- Modals -->
+  <div class="modal fade" id="rosemaryModal" tabindex="-1">
+    <div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h5>Rosemary</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body">Great for hair growth and scalp health.</div></div></div>
+  </div>
+  <div class="modal fade" id="arganModal" tabindex="-1">
+    <div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h5>Argan</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body">Moisturizes hair and adds shine.</div></div></div>
+  </div>
+  <div class="modal fade" id="teaTreeModal" tabindex="-1">
+    <div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h5>Tea Tree</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body">Soothes itchy scalp and clears buildup.</div></div></div>
+  </div>
+  <div class="modal fade" id="moringaModal" tabindex="-1">
+    <div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h5>Moringa</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body">Rich in antioxidants for glowing skin.</div></div></div>
+  </div>
+  <div class="modal fade" id="jojobaModal" tabindex="-1">
+    <div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h5>Jojoba</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body">Hydrates and balances skin oil.</div></div></div>
+  </div>
+  <div class="modal fade" id="rosehipModal" tabindex="-1">
+    <div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h5>Rosehip</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body">Improves skin tone and reduces scars.</div></div></div>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById("checkoutForm").addEventListener("submit", function(e){
+      e.preventDefault();
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      sessionStorage.setItem("name", name);
+      sessionStorage.setItem("email", email);
+      alert("Thank you for your order!");
+    });
+  </script>
 </body>
 </html>
