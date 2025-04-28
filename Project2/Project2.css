@@ -33,5 +33,5 @@ h1, h2 {
 }
 
 .intro_img:hover .hover-text {
-  opacity: 1;
+  opacity: 2;
 }
