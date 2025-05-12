@@ -1,0 +1,38 @@
+:root {
+    --primarycolor: rgb(240, 248, 255);
+    --primarylight: rgb(200, 221, 235);
+    --secondarycolor: rgb(106, 159, 181);
+    --text-dark: rgb(44, 62, 80);
+  }
+  
+  body {
+    background-color: var(--primarycolor);
+    color: var(--text-dark);
+  }
+  
+  h1, h2 {
+    color: var(--secondarycolor);
+  }
+  
+.intro_img {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .hover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 6px;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+  }
+  
+.intro_img:hover .hover-text {
+    opacity: 2;
+  }
+  
