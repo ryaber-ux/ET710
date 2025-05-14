@@ -1,38 +1,82 @@
 :root {
-    --primarycolor: rgb(240, 248, 255);
-    --primarylight: rgb(200, 221, 235);
-    --secondarycolor: rgb(106, 159, 181);
-    --text-dark: rgb(44, 62, 80);
-  }
-  
-  body {
-    background-color: var(--primarycolor);
-    color: var(--text-dark);
-  }
-  
-  h1, h2 {
-    color: var(--secondarycolor);
-  }
-  
+  --primarycolor: rgb(240, 248, 255);
+  --primarylight: rgb(200, 221, 235);
+  --secondarycolor: rgb(106, 159, 181);
+  --text-dark: rgb(44, 62, 80);
+}
+
+body {
+  background-color: var(--primarycolor);
+  color: var(--text-dark);
+  font-family: Arial, sans-serif;
+}
+
+h1, h2 {
+  color: var(--secondarycolor);
+  font-weight: bold;
+}
+
+.navbar {
+  background-color: var(--secondarycolor) !important;
+}
+
+.navbar-brand,
+.nav-link {
+  color: white !important;
+}
+
+section {
+  padding: 40px 0;
+}
+
+.card {
+  border: 1px solid var(--primarylight);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.card-body {
+  background-color: white;
+}
+
+.btn-outline-primary {
+  border-color: var(--secondarycolor);
+  color: var(--secondarycolor);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--secondarycolor);
+  color: white;
+}
+
+footer {
+  background-color: var(--secondarycolor);
+  color: white;
+  padding: 20px;
+}
+
+footer a {
+  color: white;
+  text-decoration: underline;
+}
+
 .intro_img {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .hover-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    background: rgba(0, 0, 0, 0.6);
-    padding: 10px;
-    border-radius: 6px;
-    opacity: 0;
-    transition: 0.3s ease-in-out;
-  }
-  
+  position: relative;
+  display: inline-block;
+}
+
+.hover-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  border-radius: 6px;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
 .intro_img:hover .hover-text {
-    opacity: 2;
-  }
-  
+  opacity: 1;
+}
