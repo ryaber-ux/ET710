@@ -1,70 +1,70 @@
-:root {
+:root{
   --primarycolor: rgb(240, 248, 255);
   --primarylight: rgb(200, 221, 235);
   --secondarycolor: rgb(106, 159, 181);
   --text-dark: rgb(44, 62, 80);
 }
 
-body {
+body{
   background-color: var(--primarycolor);
   color: var(--text-dark);
   font-family: Arial, sans-serif;
 }
 
-h1, h2 {
+h1, h2{
   color: var(--secondarycolor);
   font-weight: bold;
 }
 
-.navbar {
+.navbar{
   background-color: var(--secondarycolor) !important;
 }
 
 .navbar-brand,
-.nav-link {
+.nav-link{
   color: white !important;
 }
 
-section {
+section{
   padding: 40px 0;
 }
 
-.card {
+.card{
   border: 1px solid var(--primarylight);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
-.card-body {
+.card-body{
   background-color: white;
 }
 
-.btn-outline-primary {
+.btn-outline-primary{
   border-color: var(--secondarycolor);
   color: var(--secondarycolor);
 }
 
-.btn-outline-primary:hover {
+.btn-outline-primary:hover{
   background-color: var(--secondarycolor);
   color: white;
 }
 
-footer {
+footer{
   background-color: var(--secondarycolor);
   color: white;
   padding: 20px;
 }
 
-footer a {
+footer a{
   color: white;
   text-decoration: underline;
 }
 
-.intro_img {
+.intro_img{
   position: relative;
   display: inline-block;
 }
 
-.hover-text {
+.hover-text{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -77,6 +77,18 @@ footer a {
   transition: 0.3s ease-in-out;
 }
 
-.intro_img:hover .hover-text {
+.intro_img:hover .hover-text{
   opacity: 1;
+}
+
+.intro_img img{
+  animation: zoomIn 1s ease-out;
+}
+.card:hover{
+  transform: scale(1.03);
+  transition: 0.3s ease-in-out;
+}
+@keyframes zoomIn{
+  from {transform: scale(0.9); opacity: 0;}
+  to {transform: scale(1); opacity: 1;}
 }
