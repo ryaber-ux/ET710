@@ -6,6 +6,7 @@
   --text-dark: #212529;
 }
 
+
 body{
   background-color: var(--primarycolor);
   color: var(--text-dark);
