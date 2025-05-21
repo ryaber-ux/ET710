@@ -1,8 +1,9 @@
 :root{
-  --primarycolor: rgb(240, 248, 255);
-  --primarylight: rgb(200, 221, 235);
-  --secondarycolor: rgb(106, 159, 181);
-  --text-dark: rgb(44, 62, 80);
+  --primarycolor: #f5f5f5;
+  --primarylight: #e0e0e0;
+  --secondarycolor: #6c757d;
+  --accent-gold: #c4a000;
+  --text-dark: #212529;
 }
 
 body{
@@ -39,12 +40,12 @@ section{
 }
 
 .btn-outline-primary{
-  border-color: var(--secondarycolor);
-  color: var(--secondarycolor);
+  border-color: var(--accent-gold);
+  color: var(--accent-gold);
 }
 
 .btn-outline-primary:hover{
-  background-color: var(--secondarycolor);
+  background-color: var(--accent-gold);
   color: white;
 }
 
@@ -55,7 +56,7 @@ footer{
 }
 
 footer a{
-  color: white;
+  color: var(--accent-gold);
   text-decoration: underline;
 }
 
@@ -84,10 +85,13 @@ footer a{
 .intro_img img{
   animation: zoomIn 1s ease-out;
 }
+
 .card:hover{
   transform: scale(1.03);
   transition: 0.3s ease-in-out;
+  border-color: var(--accent-gold);
 }
+
 @keyframes zoomIn{
   from {transform: scale(0.9); opacity: 0;}
   to {transform: scale(1); opacity: 1;}
